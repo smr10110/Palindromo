@@ -1,5 +1,6 @@
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 public class PalindromoTest {
@@ -26,5 +27,19 @@ public class PalindromoTest {
     @Test
     public void pruebaCadenaDeTextoVacio() {
         assertTrue(Palindromo.esPalindromo(" "));
+    }
+    @Test
+    public void pruebaConPalindromoAca() {
+        assertEquals(true, Palindromo.esPalindromo("aca"));
+    }
+
+    @Test
+    public void pruebaConNoPalindromoAcas() {
+        assertEquals(false, Palindromo.esPalindromo("acas"));
+    }
+
+    @Test
+    public void pruebaConPalindromoInterrogacionHInterrogacion() {
+        assertEquals(true, Palindromo.esPalindromo("h"));
     }
 }

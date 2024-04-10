@@ -45,4 +45,17 @@ Prueba 5: cadena de texto vacio
 - Entrada: " "
 - Resultado esperado: true
 
+3.4)
+
+- Entrada: "aca"
+- Resultado: true
+
+- Entrada: "acas"
+- Resultado: false
+
+- Entrada: "h"
+- Resultado: false
+
+
+
 
