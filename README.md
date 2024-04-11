@@ -57,5 +57,47 @@ Prueba 5: cadena de texto vacio
 - Resultado: false
 
 
+Paso 4:
 
+4.1)
 
+- Caso de prueba 1:
+
+Input: 200 (número entero)
+
+Resultdado esperado: false
+
+- Caso de prueba 2:
+
+Input: “” (cadena vacía)
+
+Resultdado esperado: true
+
+- Caso de prueba 3:
+
+Input: “aaabccbaaa”
+
+Resultdado esperado: true
+
+- Caso de prueba 4:
+
+Input: “ahabccbaaa”
+
+Resultdado esperado: false
+
+- Caso de prueba 5:
+
+Input: “La tele letal”
+
+Resultdado esperado: false
+
+4.2)
+
+¿Qué consideraciones tomaron en cuenta?
+R: Basandonos en todas las pruebas que nos solicitaron se implemento manejo de entradas nulas y cadenas de texto vacias para evitar excepciones inesperadas, se normalizo la entrada convirtiéndola a minusculas y eliminando caracteres no alfanuméricos para facilitar la comparacion.
+
+¿Qué mejoro en su metodo?
+R: implementar chequeos para entradas nulas y cadenas vacías. La normalizacións de texto, convirtiendo todo a minúsculas y eliminando caracteres no alfanumericos, hace que el metodo sea eficaz al comparar correctamente ambos extremos de la cadena.
+
+¿Qué rol jugaron las pruebas en mejorar su código?
+R: Las pruebas resultaron fundamentales para la identificación de errores y excepciones, permitiendo así la optimizacion de la lógica del programa. Gracias a este proceso, se logro adaptar y perfeccionar el código para manejar adecuadamente una variedad de entradas excepcionales.

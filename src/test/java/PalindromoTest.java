@@ -42,4 +42,30 @@ public class PalindromoTest {
     public void pruebaConPalindromoInterrogacionHInterrogacion() {
         assertEquals(true, Palindromo.esPalindromo("h"));
     }
+
+    @Test
+    public void casoDePrueba1_EnteroNoEsString() {
+
+        assertEquals(false, Palindromo.esPalindromo("200"));
+    }
+
+    @Test
+    public void casoDePrueba2_CadenaVacia() {
+        assertEquals(true, Palindromo.esPalindromo(""));
+    }
+
+    @Test
+    public void casoDePrueba3_PalindromoSimetrico() {
+        assertEquals(true, Palindromo.esPalindromo("aaabccbaaa"));
+    }
+
+    @Test
+    public void casoDePrueba4_PalindromoNoSimetrico() {
+        assertEquals(false, Palindromo.esPalindromo("ahabccbaaa"));
+    }
+
+    @Test
+    public void casoDePrueba5_FraseConEspacios() {
+        assertEquals(false, Palindromo.esPalindromo("La tele letal"));
+    }
 }
